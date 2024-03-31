@@ -52,5 +52,13 @@
 
     <!--- Dump out the array containing the books --->
     <cfdump var="#bookArray#">
+
+    <ul>
+        <cfoutput>
+            <cfloop array = "#bookArray#" item="book1">
+                <li>#book1.Title# by #book1.Author#</li>
+            </cfloop> 
+        </cfoutput>
+    </ul>
 </body>
 </html>
