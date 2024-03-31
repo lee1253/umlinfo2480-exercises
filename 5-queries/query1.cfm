@@ -7,12 +7,11 @@
 <body>
     <cfset pageController = createObject("query1") />
     <cfset allBooks = pageController.allBooks() />
-    <cfdump var="#allBooks#" />
 
     <cfoutput>
         <ul>
             <cfloop query="allBooks">
-                <li>#Title#</li>
+                <li>#title# is #pages# long.</li>
             </cfloop>
         </ul>
     </cfoutput>
