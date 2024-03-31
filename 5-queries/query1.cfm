@@ -10,7 +10,11 @@
     <cfdump var="#allBooks#" />
 
     <cfoutput>
-        All books has #allBooks.recordcount# books in it and the columns are #allBooks.columnlist#
+        <ul>
+            <cfloop query="allBooks">
+                <li>#Title#</li>
+            </cfloop>
+        </ul>
     </cfoutput>
 </body>
 </html>
