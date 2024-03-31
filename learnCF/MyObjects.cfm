@@ -21,5 +21,12 @@
 
     <h2>Book Information:</h2>
     <cfdump var="#bookInfo#">
+
+    <cfoutput>
+    <p>
+        The book is titled #bookInfo.Title#. The author is #bookInfo.Author#. It was published in #bookInfo["Year"]# by #bookInfo.Publisher#.
+    <p>
+    #bookInfo.Title#
+    </cfoutput>
 </body>
 </html>
